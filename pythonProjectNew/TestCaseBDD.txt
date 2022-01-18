@@ -1,0 +1,36 @@
+Website 
+http://automationpractice.com/index.php
+
+Exercise 2: 
+Create a test case to add an item to the cart and complete purchase order. 
+Please validate: 
+•  Item(s) was added to cart and price is correct 
+•  Successful order is complete message 
+Note: Registering the user can be done manually and not required for exercise. 
+The login is only needed to perform the purchase
+
+
+
+
+Scenario: User and password valid data
+
+    	Given access on the website http://automationpractice.com/index.php
+	When I put the valid user and password
+	Then I have full access of the plataform.
+
+
+Scenario: Add an item to the cart and complete purchase order.
+
+    	Given access on the website http://automationpractice.com/index.php
+	And I'm already logged into the system
+	When I click in the Women button
+	And I mouse over in the Faded Short Sleeve T-Shirts
+	And I click in the Add to Card
+	And I click in the Proceed to checkout
+	Then I´ll see the SHOPPING-CART SUMMARY
+	And I click in the Proceed to checkout
+	And I´ll check my informations and click in the Proceed to checkout
+	And I´ll agree with the terms of the service and click in the Proceed to checkout
+	And I click in the Pay by bank wire
+	And I click in the I confirm my order
+	And I´ll see the message Your order on My Store is complete

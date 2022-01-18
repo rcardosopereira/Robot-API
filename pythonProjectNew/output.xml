@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220118 01:41:55.599" rpa="false" schemaversion="2">
+<suite id="s1" name="TC 001 Get request" source="C:\Users\Rafael\PycharmProjects\pythonProjectNew\TC_001_Get_request.robot">
+<test id="s1-t1" name="TEST1">
+<kw name="GET" library="RequestsLibrary">
+<var>${response.status_code}</var>
+<arg>https://www.anapioficeandfire.com/api/houses</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220118 01:41:56.319" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses 
+ path_url=/api/houses 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:56.320" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:56 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'link': '&lt;https://www.anapioficeandfire.com/api/houses?page=2&amp;pageSize=10&gt;; rel="next", &lt;https://www.anapioficeandfire.com/api/houses?page=1&amp;pageSize=10&gt;; rel="first", &lt;https://www.anapioficeandfire.com/api/houses?page=45&amp;pageSize=10&gt;; rel="last"', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=e5mO964HNaiv7%2BmVN8xrJWHtHLH8f%2FcIkYGP%2Ba%2FE9sIzSq8aniPi%2FLesca73E3ZfZ5MZVNS31jm2LeoonR1B2LNqRqROa1Z9FdVqwRefbv3q7Q8fDne%2BN1Dj14sbWS0Qgn3naE%2FQ79kpzBEh"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fb08f93e658-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=[{"url":"https://www.anapioficeandfire.com/api/houses/1","name":"House Algood","region":"The Westerlands","coatOfArms":"A golden wreath, on a blue field with a gold border(Azure, a garland of laurel within a bordure or)","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/229","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]},{"url":"https://www.anapioficeandfire.com/api/houses/3","name":"House Amber","region":"The North","coatOfArms":"","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/4","name":"House Ambrose","region":"The Reach","coatOfArms":"Or, semy of ants gules","words":"Never Resting","titles":[""],"seats":[""],"currentLord":"https://www.anapioficeandfire.com/api/characters/141","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/82","https://www.anapioficeandfire.com/api/characters/102","https://www.anapioficeandfire.com/api/characters/141","https://www.anapioficeandfire.com/api/characters/152","https://www.anapioficeandfire.com/api/characters/344"]},{"url":"https://www.anapioficeandfire.com/api/houses/5","name":"House Appleton of Appleton","region":"The Reach","coatOfArms":"Or, an apple tree eradicated proper fructed gules, quartered with argent, a gatehouse cendrée","words":"","titles":[""],"seats":["Appleton"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/6","name":"House Arryn of Gulltown","region":"The Vale","coatOfArms":"","words":"","titles":[""],"seats":["Gulltown"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/7","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/7","name":"House Arryn of the Eyrie","region":"The Vale","coatOfArms":"A sky-blue falcon soaring against a white moon, on a sky-blue field(Bleu celeste, upon a plate a falcon volant of the field)","words":"As High as Honor","titles":["King of Mountain and Vale (formerly)","Lord of the Eyrie","Defender of the Vale","Warden of the East"],"seats":["The Eyrie (summer)","Gates of the Moon (winter)"],"currentLord":"https://www.anapioficeandfire.com/api/characters/894","heir":"https://www.anapioficeandfire.com/api/characters/477","overlord":"https://www.anapioficeandfire.com/api/houses/16","founded":"Coming of the Andals","founder":"https://www.anapioficeandfire.com/api/characters/144","diedOut":"","ancestralWeapons":[""],"cadetBranches":["https://www.anapioficeandfire.com/api/houses/6"],"swornMembers":["https://www.anapioficeandfire.com/api/characters/49","https://www.anapioficeandfire.com/api/characters/92","https://www.anapioficeandfire.com/api/characters/93","https://www.anapioficeandfire.com/api/characters/107","https://www.anapioficeandfire.com/api/characters/223","https://www.anapioficeandfire.com/api/characters/265","https://www.anapioficeandfire.com/api/characters/300","https://www.anapioficeandfire.com/api/characters/356","https://www.anapioficeandfire.com/api/characters/477","https://www.anapioficeandfire.com/api/characters/508","https://www.anapioficeandfire.com/api/characters/540","https://www.anapioficeandfire.com/api/characters/548","https://www.anapioficeandfire.com/api/characters/558","https://www.anapioficeandfire.com/api/characters/572","https://www.anapioficeandfire.com/api/characters/688","https://www.anapioficeandfire.com/api/characters/894","https://www.anapioficeandfire.com/api/characters/1068","https://www.anapioficeandfire.com/api/characters/1193","https://www.anapioficeandfire.com/api/characters/1280","https://www.anapioficeandfire.com/api/characters/1443","https://www.anapioficeandfire.com/api/characters/1655","https://www.anapioficeandfire.com/api/characters/1693","https://www.anapioficeandfire.com/api/characters/1715","https://www.anapioficeandfire.com/api/characters/1884"]},{"url":"https://www.anapioficeandfire.com/api/houses/8","name":"House Ashford of Ashford","region":"The Reach","coatOfArms":"Tenny, a sun in splendour beneath a chevron inverted argent","words":"Our Sun Shines Bright","titles":["Lord of Ashford"],"seats":["Ashford"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/121","https://www.anapioficeandfire.com/api/characters/641","https://www.anapioficeandfire.com/api/characters/895","https://www.anapioficeandfire.com/api/characters/1812"]},{"url":"https://www.anapioficeandfire.com/api/houses/9","name":"House Ashwood","region":"The North","coatOfArms":"","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/34","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/10","name":"House Baelish of Harrenhal","region":"The Riverlands","coatOfArms":"A field of silver mockingbirds, on a green field(Vert, semé of mockingbirds argent)","words":"","titles":["Lord Paramount of the Trident","Lord of Harrenhal"],"seats":["Harrenhal"],"currentLord":"https://www.anapioficeandfire.com/api/characters/823","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/16","founded":"299 AC","founder":"https://www.anapioficeandfire.com/api/characters/823","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/651","https://www.anapioficeandfire.com/api/characters/804","https://www.anapioficeandfire.com/api/characters/823","https://www.anapioficeandfire.com/api/characters/957","https://www.anapioficeandfire.com/api/characters/970"]}] 
+ </msg>
+<msg timestamp="20220118 01:41:56.321" level="INFO">${response.status_code} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:55.828" endtime="20220118 01:41:56.321"/>
+</kw>
+<kw name="GET" library="RequestsLibrary">
+<var>${response.content}</var>
+<arg>https://www.anapioficeandfire.com/api/houses</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220118 01:41:56.874" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses 
+ path_url=/api/houses 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:56.874" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:56 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'link': '&lt;https://www.anapioficeandfire.com/api/houses?page=2&amp;pageSize=10&gt;; rel="next", &lt;https://www.anapioficeandfire.com/api/houses?page=1&amp;pageSize=10&gt;; rel="first", &lt;https://www.anapioficeandfire.com/api/houses?page=45&amp;pageSize=10&gt;; rel="last"', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=6eXChbFKYqbG8EW%2FQZGlIOqlbx8ZFeviePyQiafVEPjQ9dp520grWk2DzmXTXqixxVSsOvCtXnVUtmQkgSETY%2FyOEV3ffF7n6L80salNSt13XOsmvYbZOqPG9LXm%2BbBgZE9ei2tcWpfsP%2BcH"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fb389ea74ed-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body=[{"url":"https://www.anapioficeandfire.com/api/houses/1","name":"House Algood","region":"The Westerlands","coatOfArms":"A golden wreath, on a blue field with a gold border(Azure, a garland of laurel within a bordure or)","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/229","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]},{"url":"https://www.anapioficeandfire.com/api/houses/3","name":"House Amber","region":"The North","coatOfArms":"","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/4","name":"House Ambrose","region":"The Reach","coatOfArms":"Or, semy of ants gules","words":"Never Resting","titles":[""],"seats":[""],"currentLord":"https://www.anapioficeandfire.com/api/characters/141","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/82","https://www.anapioficeandfire.com/api/characters/102","https://www.anapioficeandfire.com/api/characters/141","https://www.anapioficeandfire.com/api/characters/152","https://www.anapioficeandfire.com/api/characters/344"]},{"url":"https://www.anapioficeandfire.com/api/houses/5","name":"House Appleton of Appleton","region":"The Reach","coatOfArms":"Or, an apple tree eradicated proper fructed gules, quartered with argent, a gatehouse cendrée","words":"","titles":[""],"seats":["Appleton"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/6","name":"House Arryn of Gulltown","region":"The Vale","coatOfArms":"","words":"","titles":[""],"seats":["Gulltown"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/7","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/7","name":"House Arryn of the Eyrie","region":"The Vale","coatOfArms":"A sky-blue falcon soaring against a white moon, on a sky-blue field(Bleu celeste, upon a plate a falcon volant of the field)","words":"As High as Honor","titles":["King of Mountain and Vale (formerly)","Lord of the Eyrie","Defender of the Vale","Warden of the East"],"seats":["The Eyrie (summer)","Gates of the Moon (winter)"],"currentLord":"https://www.anapioficeandfire.com/api/characters/894","heir":"https://www.anapioficeandfire.com/api/characters/477","overlord":"https://www.anapioficeandfire.com/api/houses/16","founded":"Coming of the Andals","founder":"https://www.anapioficeandfire.com/api/characters/144","diedOut":"","ancestralWeapons":[""],"cadetBranches":["https://www.anapioficeandfire.com/api/houses/6"],"swornMembers":["https://www.anapioficeandfire.com/api/characters/49","https://www.anapioficeandfire.com/api/characters/92","https://www.anapioficeandfire.com/api/characters/93","https://www.anapioficeandfire.com/api/characters/107","https://www.anapioficeandfire.com/api/characters/223","https://www.anapioficeandfire.com/api/characters/265","https://www.anapioficeandfire.com/api/characters/300","https://www.anapioficeandfire.com/api/characters/356","https://www.anapioficeandfire.com/api/characters/477","https://www.anapioficeandfire.com/api/characters/508","https://www.anapioficeandfire.com/api/characters/540","https://www.anapioficeandfire.com/api/characters/548","https://www.anapioficeandfire.com/api/characters/558","https://www.anapioficeandfire.com/api/characters/572","https://www.anapioficeandfire.com/api/characters/688","https://www.anapioficeandfire.com/api/characters/894","https://www.anapioficeandfire.com/api/characters/1068","https://www.anapioficeandfire.com/api/characters/1193","https://www.anapioficeandfire.com/api/characters/1280","https://www.anapioficeandfire.com/api/characters/1443","https://www.anapioficeandfire.com/api/characters/1655","https://www.anapioficeandfire.com/api/characters/1693","https://www.anapioficeandfire.com/api/characters/1715","https://www.anapioficeandfire.com/api/characters/1884"]},{"url":"https://www.anapioficeandfire.com/api/houses/8","name":"House Ashford of Ashford","region":"The Reach","coatOfArms":"Tenny, a sun in splendour beneath a chevron inverted argent","words":"Our Sun Shines Bright","titles":["Lord of Ashford"],"seats":["Ashford"],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/398","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/121","https://www.anapioficeandfire.com/api/characters/641","https://www.anapioficeandfire.com/api/characters/895","https://www.anapioficeandfire.com/api/characters/1812"]},{"url":"https://www.anapioficeandfire.com/api/houses/9","name":"House Ashwood","region":"The North","coatOfArms":"","words":"","titles":[""],"seats":[""],"currentLord":"","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/34","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":[]},{"url":"https://www.anapioficeandfire.com/api/houses/10","name":"House Baelish of Harrenhal","region":"The Riverlands","coatOfArms":"A field of silver mockingbirds, on a green field(Vert, semé of mockingbirds argent)","words":"","titles":["Lord Paramount of the Trident","Lord of Harrenhal"],"seats":["Harrenhal"],"currentLord":"https://www.anapioficeandfire.com/api/characters/823","heir":"","overlord":"https://www.anapioficeandfire.com/api/houses/16","founded":"299 AC","founder":"https://www.anapioficeandfire.com/api/characters/823","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/651","https://www.anapioficeandfire.com/api/characters/804","https://www.anapioficeandfire.com/api/characters/823","https://www.anapioficeandfire.com/api/characters/957","https://www.anapioficeandfire.com/api/characters/970"]}] 
+ </msg>
+<msg timestamp="20220118 01:41:56.875" level="INFO">${response.content} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:56.321" endtime="20220118 01:41:56.875"/>
+</kw>
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>https://www.anapioficeandfire.com/api/houses/2</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20220118 01:41:57.351" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses/2 
+ path_url=/api/houses/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:57.351" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses/2 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=smu24eeyToPjRJMzZL20ULE%2Frrt5B1NjS1S%2Fb%2B9LLTXqdk5PqQR3LMo%2B3AP28tausx%2FX7ej5bXoC%2FdfQo5XepnQnckPlopnTATg3XGfqxQVaUppO%2Fm1eLmn6S8E15YM8S2%2BDduxeYp%2FHMkp9"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fb70daa4058-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]} 
+ </msg>
+<msg timestamp="20220118 01:41:57.351" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:56.876" endtime="20220118 01:41:57.351"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>Dorne</arg>
+<arg>${response.json()}[region]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20220118 01:41:57.352" endtime="20220118 01:41:57.353"/>
+</kw>
+<status status="PASS" starttime="20220118 01:41:55.827" endtime="20220118 01:41:57.354"/>
+</test>
+<test id="s1-t2" name="TEST2">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>API_Testing</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220118 01:41:57.356" level="INFO">Creating Session using : alias=API_Testing, url=https://www.anapioficeandfire.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220118 01:41:57.355" endtime="20220118 01:41:57.356"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${Get_Response}</var>
+<arg>API_Testing</arg>
+<arg>api/houses/2</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220118 01:41:57.860" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses/2 
+ path_url=/api/houses/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:57.860" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses/2 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:57 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=7QBuVnjkiQHYhe4L4RCoXuwU4HDbFV5KzR3SZJwOAtxAn6jd6ZbOQhetfnSYctTz96LOKJD37fMg2aRIN1ntjlTycfL6YT3XcJ%2BE8jKtuHnOS255Qg%2BuzWQzd1TvM7kxnJvA7TFn16lKgTBV"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fba0f21775b-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]} 
+ </msg>
+<msg timestamp="20220118 01:41:57.860" level="INFO">c:\users\rafael\pycharmprojects\pythonprojectnew\venv\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.anapioficeandfire.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220118 01:41:57.860" level="INFO">${Get_Response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:57.356" endtime="20220118 01:41:57.860"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${json_response}</var>
+<arg>${Get_Response.json()}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220118 01:41:57.862" level="INFO">${json_response} = {'url': 'https://www.anapioficeandfire.com/api/houses/2', 'name': 'House Allyrion of Godsgrace', 'region': 'Dorne', 'coatOfArms': 'Gyronny Gules and Sable, a hand couped Or', 'words': 'No Foe May Pass...</msg>
+<status status="PASS" starttime="20220118 01:41:57.861" endtime="20220118 01:41:57.862"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>@{region}</var>
+<arg>${json_response}</arg>
+<arg>region</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20220118 01:41:57.908" level="INFO">@{region} = [ Dorne ]</msg>
+<status status="PASS" starttime="20220118 01:41:57.863" endtime="20220118 01:41:57.908"/>
+</kw>
+<kw name="Get From List" library="Collections">
+<var>${r_region}</var>
+<arg>${region}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<msg timestamp="20220118 01:41:57.910" level="INFO">${r_region} = Dorne</msg>
+<status status="PASS" starttime="20220118 01:41:57.909" endtime="20220118 01:41:57.910"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${r_region}</arg>
+<arg>Dorne</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220118 01:41:57.910" endtime="20220118 01:41:57.911"/>
+</kw>
+<status status="PASS" starttime="20220118 01:41:57.355" endtime="20220118 01:41:57.911"/>
+</test>
+<test id="s1-t3" name="TEST3">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>API_Testing</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220118 01:41:57.914" level="INFO">Creating Session using : alias=API_Testing, url=https://www.anapioficeandfire.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220118 01:41:57.914" endtime="20220118 01:41:57.914"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${Get_Response}</var>
+<arg>API_Testing</arg>
+<arg>api/houses/2</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220118 01:41:58.133" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses/2 
+ path_url=/api/houses/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:58.133" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses/2 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=XbpuiALyMI3Rjn92XyylLyUTtdn66ogmdkzo7O%2BzIWtz%2FsTJWPX7h1%2FmbnpEKqGR3MhfSG9JyLOwwcSqhNmw3eDltJU2bx2Nsr4FfrB6gWCrsGx%2BkLtjPTGt%2Bj3Lj018bFNn07EsHBdYVkXA"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fbd8b6b06d9-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]} 
+ </msg>
+<msg timestamp="20220118 01:41:58.133" level="INFO">c:\users\rafael\pycharmprojects\pythonprojectnew\venv\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.anapioficeandfire.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220118 01:41:58.133" level="INFO">${Get_Response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:57.915" endtime="20220118 01:41:58.133"/>
+</kw>
+<kw name="To Json" library="RequestsLibrary">
+<var>${json_object}</var>
+<arg>${Get_Response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<msg timestamp="20220118 01:41:58.134" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg timestamp="20220118 01:41:58.136" level="INFO">To JSON using : content={"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]} </msg>
+<msg timestamp="20220118 01:41:58.136" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20220118 01:41:58.136" level="INFO">${json_object} = {'url': 'https://www.anapioficeandfire.com/api/houses/2', 'name': 'House Allyrion of Godsgrace', 'region': 'Dorne', 'coatOfArms': 'Gyronny Gules and Sable, a hand couped Or', 'words': 'No Foe May Pass...</msg>
+<status status="PASS" starttime="20220118 01:41:58.134" endtime="20220118 01:41:58.136"/>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<var>${region_Name}</var>
+<arg>${json_object}</arg>
+<arg>$.region</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<msg timestamp="20220118 01:41:58.166" level="INFO">${region_Name} = ['Dorne']</msg>
+<status status="PASS" starttime="20220118 01:41:58.136" endtime="20220118 01:41:58.167"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${region_Name[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220118 01:41:58.167" endtime="20220118 01:41:58.169"/>
+</kw>
+<status status="PASS" starttime="20220118 01:41:57.913" endtime="20220118 01:41:58.169"/>
+</test>
+<test id="s1-t4" name="TEST4">
+<kw name="Create Session" library="RequestsLibrary">
+<arg>Test_API</arg>
+<arg>https://www.anapioficeandfire.com/</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<msg timestamp="20220118 01:41:58.171" level="INFO">Creating Session using : alias=Test_API, url=https://www.anapioficeandfire.com/, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" starttime="20220118 01:41:58.171" endtime="20220118 01:41:58.171"/>
+</kw>
+<kw name="GET On Session" library="RequestsLibrary">
+<var>${resp_json}</var>
+<arg>Test_API</arg>
+<arg>api/houses/2</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<msg timestamp="20220118 01:41:58.680" level="INFO">GET Request : url=https://www.anapioficeandfire.com/api/houses/2 
+ path_url=/api/houses/2 
+ headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg timestamp="20220118 01:41:58.680" level="INFO">GET Response : url=https://www.anapioficeandfire.com/api/houses/2 
+ status=200, reason=OK 
+ headers={'Date': 'Tue, 18 Jan 2022 01:41:58 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'content-encoding': 'gzip', 'vary': 'Accept-Encoding', 'x-powered-by': 'ASP.NET', 'set-cookie': 'ARRAffinity=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;Secure;Domain=www.anapioficeandfire.com, ARRAffinitySameSite=eb78a34dc08798302f9298c9f91fb1f23207ba2ef6f43e79a015d34f5ed34cd3;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.anapioficeandfire.com', 'CF-Cache-Status': 'DYNAMIC', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Report-To': '{"endpoints":[{"url":"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=iUVj7dWEBp0WqsF0pg2PTawgui45elgUcgwUclLpvAOpfV6Sky85zhSnVZ9BnlKGpySQYeR18YOGLoDNT%2FOOmgsb6A%2FbvGDSgbf6dHOn2yYa11AzWdW8FtI9Z2CeCDbdXXfvh%2BhrGJL3zUOX"}],"group":"cf-nel","max_age":604800}', 'NEL': '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}', 'Server': 'cloudflare', 'CF-RAY': '6cf41fbf2f8a7457-LHR', 'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400'} 
+ body={"url":"https://www.anapioficeandfire.com/api/houses/2","name":"House Allyrion of Godsgrace","region":"Dorne","coatOfArms":"Gyronny Gules and Sable, a hand couped Or","words":"No Foe May Pass","titles":[""],"seats":["Godsgrace"],"currentLord":"https://www.anapioficeandfire.com/api/characters/298","heir":"https://www.anapioficeandfire.com/api/characters/1922","overlord":"https://www.anapioficeandfire.com/api/houses/285","founded":"","founder":"","diedOut":"","ancestralWeapons":[""],"cadetBranches":[],"swornMembers":["https://www.anapioficeandfire.com/api/characters/298","https://www.anapioficeandfire.com/api/characters/1129","https://www.anapioficeandfire.com/api/characters/1301","https://www.anapioficeandfire.com/api/characters/1922"]} 
+ </msg>
+<msg timestamp="20220118 01:41:58.680" level="INFO">c:\users\rafael\pycharmprojects\pythonprojectnew\venv\lib\site-packages\urllib3\connectionpool.py:1043: InsecureRequestWarning: Unverified HTTPS request is being made to host 'www.anapioficeandfire.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(</msg>
+<msg timestamp="20220118 01:41:58.682" level="INFO">${resp_json} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20220118 01:41:58.172" endtime="20220118 01:41:58.682"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${resp_json.json()}</arg>
+<arg>Dorne</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20220118 01:41:58.685" level="INFO">Argument types are:
+&lt;class 'dict'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20220118 01:41:58.686" level="FAIL">{'url': 'https://www.anapioficeandfire.com/api/houses/2', 'name': 'House Allyrion of Godsgrace', 'region': 'Dorne', 'coatOfArms': 'Gyronny Gules and Sable, a hand couped Or', 'words': 'No Foe May Pass', 'titles': [''], 'seats': ['Godsgrace'], 'currentLord': 'https://www.anapioficeandfire.com/api/characters/298', 'heir': 'https://www.anapioficeandfire.com/api/characters/1922', 'overlord': 'https://www.anapioficeandfire.com/api/houses/285', 'founded': '', 'founder': '', 'diedOut': '', 'ancestralWeapons': [''], 'cadetBranches': [], 'swornMembers': ['https://www.anapioficeandfire.com/api/characters/298', 'https://www.anapioficeandfire.com/api/characters/1129', 'https://www.anapioficeandfire.com/api/characters/1301', 'https://www.anapioficeandfire.com/api/characters/1922']} != Dorne</msg>
+<status status="FAIL" starttime="20220118 01:41:58.683" endtime="20220118 01:41:58.686"/>
+</kw>
+<status status="FAIL" starttime="20220118 01:41:58.170" endtime="20220118 01:41:58.688">{'url': 'https://www.anapioficeandfire.com/api/houses/2', 'name': 'House Allyrion of Godsgrace', 'region': 'Dorne', 'coatOfArms': 'Gyronny Gules and Sable, a hand couped Or', 'words': 'No Foe May Pass', 'titles': [''], 'seats': ['Godsgrace'], 'currentLord': 'https://www.anapioficeandfire.com/api/characters/298', 'heir': 'https://www.anapioficeandfire.com/api/characters/1922', 'overlord': 'https://www.anapioficeandfire.com/api/houses/285', 'founded': '', 'founder': '', 'diedOut': '', 'ancestralWeapons': [''], 'cadetBranches': [], 'swornMembers': ['https://www.anapioficeandfire.com/api/characters/298', 'https://www.anapioficeandfire.com/api/characters/1129', 'https://www.anapioficeandfire.com/api/characters/1301', 'https://www.anapioficeandfire.com/api/characters/1922']} != Dorne</status>
+</test>
+<status status="FAIL" starttime="20220118 01:41:55.611" endtime="20220118 01:41:58.693"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="TC 001 Get request">TC 001 Get request</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220118 01:41:58.134" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+</errors>
+</robot>
